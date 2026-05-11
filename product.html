@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23331f0d'/%3E%3Ctext x='50' y='62' font-size='55' text-anchor='middle' font-family='Inter,sans-serif' fill='%23fff'%3EP%3C/text%3E%3C/svg%3E" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Torra Mel do Brasil — café honey com notas de caramelo, casca de laranja e amêndoa torrada. 250g de grãos inteiros." />
+  <title>Torra Mel do Brasil | Pedro Lima Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="index.html">Pedro Lima Coffee</a>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="shop.html">Loja</a>
+          <a href="courses.html">Cursos</a>
+          <a href="subscription.html">Assinatura</a>
+          <a href="blog.html">Jornal</a>
+          <a href="about.html">Sobre</a>
+          <a href="contact.html">Contato</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button" aria-label="Alternar tema" aria-live="polite" data-theme-toggle>
+            <span class="icon-sun">☀</span>
+            <span class="icon-moon">🌙</span>
+            <span class="sr-only" id="theme-status">Tema claro ativado</span>
+          </button>
+          <button class="icon-button" aria-label="Abrir menu" data-menu-toggle>☰</button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="mobile-nav" aria-label="Navegação móvel">
+      <a href="shop.html">Loja</a>
+      <a href="courses.html">Cursos</a>
+      <a href="subscription.html">Assinatura</a>
+      <a href="blog.html">Jornal</a>
+      <a href="about.html">Sobre</a>
+      <a href="contact.html">Contato</a>
+    </nav>
+
+    <main>
+      <section class="section product-detail-hero">
+        <div class="detail-image" style="background-image:url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=70&fm=webp');"></div>
+        <div class="detail-copy">
+          <p class="eyebrow">Origem única</p>
+          <h1>Torra Mel do Brasil</h1>
+          <p>Doçura suave de caramelo equilibrada por um brilho delicado. Criado para manhãs lentas e rituais elevados.</p>
+          <div class="detail-meta">
+            <span>Origem: Brasil</span>
+            <span>Torra: Média</span>
+            <span>Formato: 250g grãos inteiros</span>
+          </div>
+          <div class="detail-actions">
+            <span class="product-price">R$ 28</span>
+            <button class="button button-primary" data-add-cart="coffee-brazil-honey">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-product-info" aria-labelledby="product-info-title">
+        <div class="section-intro">
+          <p class="eyebrow">Detalhes do produto</p>
+          <h2 id="product-info-title">História de origem e notas de degustação</h2>
+        </div>
+        <div class="product-info-grid">
+          <div class="info-card">
+            <h3>História de origem</h3>
+            <p>Cultivado em Minas Gerais por uma fazenda familiar comprometida com colheitas sustentáveis, este lote ressalta a doçura do processo honey e a complexidade natural crocante.</p>
+          </div>
+          <div class="info-card">
+            <h3>Perfil de sabor</h3>
+            <ul>
+              <li>Caramelo</li>
+              <li>Casca de laranja</li>
+              <li>Amêndoa torrada</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>Sugestões de preparo</h3>
+            <p>Use um V60 ou Chemex com proporção 1:16. Inicie com água a 92°C, faça a pré-infusão por 30 segundos e continue com derramadas suaves para uma xícara aveludada.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-reviews" aria-labelledby="reviews-title">
+        <div class="section-intro">
+          <p class="eyebrow">Avaliações</p>
+          <h2 id="reviews-title">O que estão saboreando</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <p>“A doçura honey é incrivelmente sutil. Faço este café todo fim de semana.”</p>
+            <span>— Ana</span>
+          </article>
+          <article class="review-card">
+            <p>“Delicado e encorpado, parece uma xícara premium sem esforço.”</p>
+            <span>— Gabriel</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Carrinho de compras">
+      <div class="cart-header">
+        <h3>Seu carrinho</h3>
+        <button class="icon-button" aria-label="Fechar carrinho" data-close-cart>×</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-summary">
+        <div>
+          <span>Subtotal</span>
+          <strong id="cartTotal">R$0,00</strong>
+        </div>
+        <a class="button button-primary button-block" href="contact.html">Finalizar compra</a>
+      </div>
+    </aside>
+
+    <button class="cart-float" aria-label="Abrir carrinho" data-open-cart>🛒<span class="cart-count"></span></button>
+
+    <footer class="site-footer">
+      <div>
+        <p class="brand-footer">Pedro Lima Coffee</p>
+        <p>Café artesanal de luxo para manhãs reflexivas.</p>
+      </div>
+      <div class="footer-links">
+        <a href="contact.html">Contato</a>
+        <a href="https://www.instagram.com/pedrolimacoffee" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
