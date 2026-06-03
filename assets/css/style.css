@@ -343,8 +343,21 @@ button { border: none; cursor: pointer; background: none; }
   font-weight: 500;
   letter-spacing: 0.26em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: color-mix(in srgb, var(--accent) 72%, var(--text) 28%);
   margin-bottom: 0.75rem;
+}
+
+/* Ensure eyebrow labels are readable on surface card backgrounds */
+.course-card .eyebrow,
+.feature-card .eyebrow,
+.blog-card .eyebrow,
+.product-card .eyebrow,
+.plan-card .eyebrow,
+.value-card .eyebrow,
+.testimonial-card .eyebrow,
+.article-card .eyebrow {
+  color: var(--text);
+  opacity: 0.95;
 }
 
 /* ── Typography ─────────────────────────────────────────── */
@@ -458,7 +471,12 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); }
   line-height: 1.8;
 }
 
-.page-hero .eyebrow { color: var(--gold-warm); opacity: 0.9; }
+.page-hero .eyebrow {
+  color: color-mix(in srgb, white 86%, var(--gold-warm) 14%);
+  opacity: 1;
+  text-shadow: 0 3px 18px rgba(0,0,0,0.5);
+  font-weight: 600;
+}
 
 .hero-actions {
   display: flex;
