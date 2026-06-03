@@ -527,13 +527,25 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); }
 
 .button-outline {
   background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+.button-outline:hover {
+  background: rgba(0,0,0,0.04);
+  border-color: var(--accent);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+/* Keep white outline variant when placed over dark hero/backgrounds */
+.page-hero .button-outline,
+.page-hero .button-outline:hover {
   color: #fff;
   border-color: rgba(255,255,255,0.4);
 }
-.button-outline:hover {
+.page-hero .button-outline:hover {
   background: rgba(255,255,255,0.12);
   border-color: rgba(255,255,255,0.7);
-  transform: translateY(-2px);
 }
 
 .button-secondary {
