@@ -8,7 +8,7 @@
   <title>Contato | Pedro Lima Coffee</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -22,67 +22,110 @@
           <a href="subscription.html">Assinatura</a>
           <a href="blog.html">Jornal</a>
           <a href="about.html">Sobre</a>
-          <a href="contact.html">Contato</a>
+          <a href="contact.html" class="active">Contato</a>
         </nav>
         <div class="header-actions">
           <button class="icon-button" aria-label="Alternar tema" aria-live="polite" data-theme-toggle>
-            <span class="icon-sun">☀</span>
-            <span class="icon-moon">🌙</span>
+            <span class="icon-sun">☀</span><span class="icon-moon">🌙</span>
             <span class="sr-only" id="theme-status">Tema claro ativado</span>
           </button>
           <button class="icon-button" aria-label="Abrir menu" data-menu-toggle>☰</button>
         </div>
       </div>
     </header>
-
     <nav class="mobile-nav" aria-label="Navegação móvel">
-      <a href="shop.html">Loja</a>
-      <a href="courses.html">Cursos</a>
-      <a href="subscription.html">Assinatura</a>
-      <a href="blog.html">Jornal</a>
-      <a href="about.html">Sobre</a>
-      <a href="contact.html">Contato</a>
+      <a href="shop.html">Loja</a><a href="courses.html">Cursos</a>
+      <a href="subscription.html">Assinatura</a><a href="blog.html">Jornal</a>
+      <a href="about.html">Sobre</a><a href="contact.html">Contato</a>
     </nav>
-
     <main>
       <section class="page-hero page-hero-contact">
         <div>
           <p class="eyebrow">Conectar</p>
           <h1>Vamos tornar sua experiência de café inesquecível.</h1>
-          <p>Perguntas, pedidos, workshops ou imprensa—Pedro fica feliz em ouvir você.</p>
+          <p>Perguntas, pedidos, workshops ou imprensa — Pedro fica feliz em ouvir você.</p>
         </div>
       </section>
 
+      <!-- Canais rápidos -->
+      <section class="section section-contact-channels" aria-label="Canais de contato">
+        <div class="contact-channels-grid">
+          <a class="contact-channel-card" href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+            <span class="channel-icon">💬</span>
+            <div>
+              <h3>WhatsApp</h3>
+              <p>Resposta em até 2h em dias úteis</p>
+            </div>
+          </a>
+          <a class="contact-channel-card" href="https://www.instagram.com/pedrolimacoffee" target="_blank" rel="noopener noreferrer">
+            <span class="channel-icon">📸</span>
+            <div>
+              <h3>Instagram</h3>
+              <p>DMs abertas para parcerias e dúvidas</p>
+            </div>
+          </a>
+          <div class="contact-channel-card">
+            <span class="channel-icon">📍</span>
+            <div>
+              <h3>Ateliê</h3>
+              <p>Vila Madalena, São Paulo · Seg–Sáb 9h–18h</p>
+            </div>
+          </div>
+          <div class="contact-channel-card">
+            <span class="channel-icon">✉️</span>
+            <div>
+              <h3>E-mail</h3>
+              <p>ola@pedrolimacoffee.com.br</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulário + info -->
       <section class="section section-contact" aria-labelledby="contact-title">
         <div class="section-intro">
           <p class="eyebrow">Entre em contato</p>
           <h2 id="contact-title">Envie-nos uma mensagem</h2>
         </div>
         <div class="contact-grid">
-          <form class="contact-form">
-            <label for="name">Nome</label>
-            <input id="name" type="text" autocomplete="name" placeholder="Seu nome" required>
-            <label for="emailAddress">E-mail</label>
-            <input id="emailAddress" type="email" autocomplete="email" placeholder="Seu e-mail" required>
-            <label for="message">Mensagem</label>
-            <textarea id="message" rows="6" autocomplete="off" placeholder="Sobre o que você gostaria de conversar?" required></textarea>
-            <button class="button button-primary" type="submit">Enviar mensagem</button>
-          </form>
-          <div class="form-success" style="display:none">
-            <h3>Mensagem enviada!</h3>
-            <p>Pedro entrará em contato em breve.</p>
+          <div>
+            <form class="contact-form">
+              <label for="name">Nome</label>
+              <input id="name" type="text" autocomplete="name" placeholder="Seu nome" required>
+              <label for="emailAddress">E-mail</label>
+              <input id="emailAddress" type="email" autocomplete="email" placeholder="Seu e-mail" required>
+              <label for="subject">Assunto</label>
+              <select id="subject" name="subject">
+                <option value="">Selecione um assunto</option>
+                <option value="pedido">Pedido / Compra</option>
+                <option value="assinatura">Assinatura</option>
+                <option value="workshop">Workshop ou curso</option>
+                <option value="imprensa">Imprensa / Parceria</option>
+                <option value="outro">Outro</option>
+              </select>
+              <label for="message">Mensagem</label>
+              <textarea id="message" rows="6" autocomplete="off" placeholder="Sobre o que você gostaria de conversar?" required></textarea>
+              <button class="button button-primary" type="submit">Enviar mensagem</button>
+            </form>
+            <div class="form-success" style="display:none">
+              <h3>Mensagem enviada!</h3>
+              <p>Pedro entrará em contato em breve.</p>
+            </div>
           </div>
+
           <div class="contact-info">
             <div class="info-card">
-              <h3>Visite-nos</h3>
-              <p>Ateliê e coffee bar em São Paulo.</p>
+              <h3>Visite o ateliê</h3>
+              <p>Rua das Flores, 142 — Vila Madalena<br>São Paulo, SP · CEP 05432-020</p>
+              <p style="margin-top:0.75rem;font-size:0.85rem;">Segunda a sábado, das 9h às 18h.</p>
             </div>
             <div class="info-card">
-              <h3>Contato rápido</h3>
+              <h3>Contato direto</h3>
               <p>WhatsApp: <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">+55 11 99999-9999</a></p>
+              <p style="margin-top:0.5rem;">E-mail: <a href="mailto:ola@pedrolimacoffee.com.br">ola@pedrolimacoffee.com.br</a></p>
             </div>
             <div class="info-card map-card">
-              <h3>Mapa</h3>
+              <h3>Onde estamos</h3>
               <iframe
                 title="Localização Pedro Lima Coffee"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d468194.3!2d-46.9249951!3d-23.6824124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbw!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
@@ -92,6 +135,32 @@
               </iframe>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- FAQ de contato -->
+      <section class="section section-faq" aria-labelledby="contact-faq-title">
+        <div class="section-intro">
+          <p class="eyebrow">Respostas rápidas</p>
+          <h2 id="contact-faq-title">Perguntas frequentes</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Vocês fazem entregas para todo o Brasil?</summary>
+            <p>Sim. Enviamos para todo o território nacional via Correios e transportadoras parceiras. O prazo varia de 3 a 7 dias úteis dependendo da região.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Como funciona o atendimento presencial no ateliê?</summary>
+            <p>O ateliê funciona como coffee bar e espaço de degustação. Você pode passar para provar os cafés da estação, comprar grãos e tirar dúvidas com a equipe. Workshops são agendados com antecedência.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Posso cancelar ou pausar minha assinatura a qualquer momento?</summary>
+            <p>Sim. Você pode cancelar ou pausar sua assinatura pelo painel de assinante, sem burocracia e sem multa. O prazo para alterações é de 5 dias antes do próximo envio.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Vocês fazem parcerias com restaurantes e hotéis?</summary>
+            <p>Sim, trabalhamos com fornecimento para estabelecimentos. Entre em contato pelo formulário selecionando o assunto "Parceria" ou pelo e-mail direto para receber nossa proposta comercial.</p>
+          </details>
         </div>
       </section>
     </main>
@@ -108,7 +177,6 @@
       </div>
     </footer>
   </div>
-
   <script src="assets/js/app.js"></script>
 </body>
 </html>

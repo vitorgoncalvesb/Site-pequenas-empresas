@@ -8,7 +8,7 @@
   <title>Jornal | Pedro Lima Coffee</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -17,33 +17,27 @@
       <div class="site-header-inner">
         <a class="brand" href="index.html">Pedro Lima Coffee</a>
         <nav class="main-nav" aria-label="Navegação principal">
-        <a href="shop.html">Loja</a>
-        <a href="courses.html">Cursos</a>
-        <a href="subscription.html">Assinatura</a>
-        <a href="blog.html" class="active">Jornal</a>
-        <a href="about.html">Sobre</a>
-        <a href="contact.html">Contato</a>
-      </nav>
-      <div class="header-actions">
-        <button class="icon-button" aria-label="Alternar tema" aria-live="polite" data-theme-toggle>
-          <span class="icon-sun">☀</span>
-          <span class="icon-moon">🌙</span>
-          <span class="sr-only" id="theme-status">Tema claro ativado</span>
-        </button>
-        <button class="icon-button" aria-label="Abrir menu" data-menu-toggle>☰</button>
-      </div>
+          <a href="shop.html">Loja</a>
+          <a href="courses.html">Cursos</a>
+          <a href="subscription.html">Assinatura</a>
+          <a href="blog.html" class="active">Jornal</a>
+          <a href="about.html">Sobre</a>
+          <a href="contact.html">Contato</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button" aria-label="Alternar tema" aria-live="polite" data-theme-toggle>
+            <span class="icon-sun">☀</span><span class="icon-moon">🌙</span>
+            <span class="sr-only" id="theme-status">Tema claro ativado</span>
+          </button>
+          <button class="icon-button" aria-label="Abrir menu" data-menu-toggle>☰</button>
+        </div>
       </div>
     </header>
-
     <nav class="mobile-nav" aria-label="Navegação móvel">
-      <a href="shop.html">Loja</a>
-      <a href="courses.html">Cursos</a>
-      <a href="subscription.html">Assinatura</a>
-      <a href="blog.html">Jornal</a>
-      <a href="about.html">Sobre</a>
-      <a href="contact.html">Contato</a>
+      <a href="shop.html">Loja</a><a href="courses.html">Cursos</a>
+      <a href="subscription.html">Assinatura</a><a href="blog.html">Jornal</a>
+      <a href="about.html">Sobre</a><a href="contact.html">Contato</a>
     </nav>
-
     <main>
       <section class="page-hero page-hero-blog">
         <div>
@@ -53,54 +47,155 @@
         </div>
       </section>
 
+      <!-- Post em destaque (grande) -->
+      <section class="section section-blog-featured" aria-labelledby="featured-post-title">
+        <div class="section-intro">
+          <p class="eyebrow">Leitura desta semana</p>
+          <h2 id="featured-post-title">Artigo em destaque</h2>
+        </div>
+        <article class="blog-featured-card">
+          <div class="blog-featured-image" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80');"></div>
+          <div class="blog-featured-content">
+            <p class="eyebrow">Origens</p>
+            <h3>O terroir do café: como solo, altitude e clima moldam cada xícara</h3>
+            <p>Assim como no vinho, cada grão carrega a memória do lugar onde nasceu. Neste guia aprofundado, exploramos como as condições ambientais de fazendas no Brasil, Etiópia e Colômbia criam perfis de sabor radicalmente diferentes — e por que isso importa para quem bebe.</p>
+            <div class="blog-meta">
+              <span>Pedro Lima</span>
+              <span>·</span>
+              <span>12 min de leitura</span>
+            </div>
+            <a class="button button-primary" href="#">Ler artigo completo</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Grid de posts recentes com imagem -->
       <section class="section" aria-labelledby="featured-posts-title">
         <div class="section-intro">
-          <p class="eyebrow">Posts em destaque</p>
+          <p class="eyebrow">Posts recentes</p>
           <h2 id="featured-posts-title">Aprenda a linguagem do café</h2>
         </div>
-        <div class="card-grid blog-grid">
-          <article class="blog-card">
-            <p class="eyebrow">Preparos</p>
-            <h3>Como ajustar seu V60</h3>
-            <p>Ritual passo a passo para extração uniforme e uma xícara mais complexa.</p>
-            <a class="button-link" href="blog.html#featured-posts-title">Ler artigo</a>
+        <div class="blog-grid-rich">
+          <article class="blog-card-rich">
+            <div class="blog-card-image" style="background-image:url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="blog-card-body">
+              <p class="eyebrow">Preparos</p>
+              <h3>Como ajustar seu V60 para extrações mais equilibradas</h3>
+              <p>Ritual passo a passo para extração uniforme e uma xícara mais complexa.</p>
+              <div class="blog-meta"><span>8 min</span></div>
+              <a class="button-link" href="#">Ler artigo</a>
+            </div>
           </article>
-          <article class="blog-card">
-            <p class="eyebrow">Origens</p>
-            <h3>Da fazenda ao torrefador</h3>
-            <p>Por que relacionamentos diretos importam para aroma e sustentabilidade.</p>
-            <a class="button-link" href="blog.html#featured-posts-title">Ler artigo</a>
+          <article class="blog-card-rich">
+            <div class="blog-card-image" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="blog-card-body">
+              <p class="eyebrow">Origens</p>
+              <h3>Da fazenda ao torrefador: por que origem direta importa</h3>
+              <p>Por que relacionamentos diretos importam para aroma, sustentabilidade e preço justo.</p>
+              <div class="blog-meta"><span>6 min</span></div>
+              <a class="button-link" href="#">Ler artigo</a>
+            </div>
           </article>
-          <article class="blog-card">
-            <p class="eyebrow">Receitas</p>
-            <h3>Latte de aveia com cardamomo</h3>
-            <p>Uma receita acolhedora para realçar doçura e especiarias a cada gole.</p>
-            <a class="button-link" href="blog.html#featured-posts-title">Ler artigo</a>
+          <article class="blog-card-rich">
+            <div class="blog-card-image" style="background-image:url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="blog-card-body">
+              <p class="eyebrow">Receitas</p>
+              <h3>Latte de aveia com cardamomo para manhãs lentas</h3>
+              <p>Uma receita acolhedora para realçar doçura e especiarias a cada gole.</p>
+              <div class="blog-meta"><span>4 min</span></div>
+              <a class="button-link" href="#">Ler artigo</a>
+            </div>
           </article>
         </div>
       </section>
 
+      <!-- Categorias visuais -->
+      <section class="section section-blog-categories" aria-labelledby="categories-title">
+        <div class="section-intro">
+          <p class="eyebrow">Explore por tema</p>
+          <h2 id="categories-title">Encontre o que interessa a você</h2>
+        </div>
+        <div class="category-grid">
+          <a class="category-card" href="#">
+            <div class="category-image" style="background-image:url('https://images.unsplash.com/photo-1510626176961-4b96c20c1d78?auto=format&fit=crop&w=600&q=80');"></div>
+            <div class="category-label">
+              <span class="eyebrow">12 artigos</span>
+              <h3>Técnicas de preparo</h3>
+            </div>
+          </a>
+          <a class="category-card" href="#">
+            <div class="category-image" style="background-image:url('https://images.unsplash.com/photo-1520499305606-273b7d16e69d?auto=format&fit=crop&w=600&q=80');"></div>
+            <div class="category-label">
+              <span class="eyebrow">8 artigos</span>
+              <h3>Origens e produtores</h3>
+            </div>
+          </a>
+          <a class="category-card" href="#">
+            <div class="category-image" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80');"></div>
+            <div class="category-label">
+              <span class="eyebrow">9 artigos</span>
+              <h3>Receitas autorais</h3>
+            </div>
+          </a>
+          <a class="category-card" href="#">
+            <div class="category-image" style="background-image:url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80');"></div>
+            <div class="category-label">
+              <span class="eyebrow">5 artigos</span>
+              <h3>Guias sensoriais</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Lista de artigos educativos -->
       <section class="section" aria-labelledby="article-list-title">
         <div class="section-intro">
-          <p class="eyebrow">Explore mais</p>
+          <p class="eyebrow">Leituras essenciais</p>
           <h2 id="article-list-title">Notas educativas para apaixonados por café</h2>
         </div>
         <div class="article-list">
           <article class="article-card">
+            <div class="article-card-meta">
+              <span class="eyebrow">Espresso</span>
+              <span class="article-read-time">5 min</span>
+            </div>
             <h3>3 maneiras de melhorar seu espresso em casa</h3>
-            <p>Ajustes simples na moagem, no tamp e na temperatura podem liberar um shot mais equilibrado.</p>
-            <a class="button-link" href="blog.html#article-list-title">Continue lendo</a>
+            <p>Ajustes simples na moagem, no tamp e na temperatura podem liberar um shot mais equilibrado e aromático.</p>
+            <a class="button-link" href="#">Continue lendo</a>
           </article>
           <article class="article-card">
-            <h3>Guia sensorial para níveis de torra</h3>
-            <p>Entenda como torra clara, média e escura mudam aroma e textura.</p>
-            <a class="button-link" href="blog.html#article-list-title">Continue lendo</a>
+            <div class="article-card-meta">
+              <span class="eyebrow">Torra</span>
+              <span class="article-read-time">7 min</span>
+            </div>
+            <h3>Guia sensorial completo para níveis de torra</h3>
+            <p>Entenda como torra clara, média e escura mudam aroma, acidez, corpo e textura na xícara.</p>
+            <a class="button-link" href="#">Continue lendo</a>
           </article>
           <article class="article-card">
-            <h3>Por que histórias de origem importam</h3>
+            <div class="article-card-meta">
+              <span class="eyebrow">Rastreabilidade</span>
+              <span class="article-read-time">6 min</span>
+            </div>
+            <h3>Por que histórias de origem importam no café especial</h3>
             <p>Como a rastreabilidade conecta você às pessoas e ao lugar por trás de cada xícara.</p>
-            <a class="button-link" href="blog.html#article-list-title">Continue lendo</a>
+            <a class="button-link" href="#">Continue lendo</a>
           </article>
+        </div>
+      </section>
+
+      <!-- Newsletter inline -->
+      <section class="section section-newsletter" aria-labelledby="blog-newsletter-title">
+        <div class="newsletter-panel">
+          <div>
+            <p class="eyebrow">Nunca perca um artigo</p>
+            <h2 id="blog-newsletter-title">Receba novos textos diretamente no seu e-mail.</h2>
+          </div>
+          <form class="newsletter-form" action="#" onsubmit="return false;">
+            <label class="sr-only" for="blog-email">E-mail</label>
+            <input id="blog-email" type="email" placeholder="Digite seu e-mail" required>
+            <button class="button button-primary" type="submit">Inscrever-se</button>
+          </form>
         </div>
       </section>
     </main>
@@ -117,7 +212,6 @@
       </div>
     </footer>
   </div>
-
   <script src="assets/js/app.js"></script>
 </body>
 </html>

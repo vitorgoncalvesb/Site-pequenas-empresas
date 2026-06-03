@@ -1,5 +1,3 @@
-# https://vitorgoncalvesb.github.io/Site-pequenas-empresas
-
 # Pedro Lima Coffee — Site Front-End
 
 Site front-end premium e responsivo para a marca de café artesanal *Pedro Lima Coffee*.
