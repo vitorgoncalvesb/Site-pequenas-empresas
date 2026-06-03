@@ -26,7 +26,7 @@ const products = [
     flavor: 'Floral',
     price: 32,
     note: 'Aromas brilhantes, semelhantes a chá, com jasmin e clareza cítrica.',
-    image: 'https://images.unsplash.com/photo-1520499305606-273b7d16e69d?auto=format&fit=crop&w=900&q=70&fm=webp'
+    image: 'https://tvbrics.com/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b11/1000_1000_1/w8m0g0ocm384z9ohbuamk3ul19m51l4p.webp'
   },
   {
     id: 'coffee-colombia-bold',
@@ -36,7 +36,7 @@ const products = [
     flavor: 'Chocolate',
     price: 30,
     note: 'Corpo luxuoso equilibrado por chocolate profundo e frutas de caroço.',
-    image: 'https://images.unsplash.com/photo-1510626176961-4b96c20c1d78?auto=format&fit=crop&w=900&q=70&fm=webp'
+    image: 'https://graocafes.com.br/wp-content/uploads/2024/11/cafe-gourmet.jpg'
   },
   {
     id: 'coffee-brazil-citrus',
